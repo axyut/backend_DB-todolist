@@ -2,15 +2,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
-const app = express();   // app is generated using express, ani tala tei app. garera kaam garako app lai
+const app = express();   
 
-//let items = ["Eat Jhol Momo","Bungee Jumping"];
-
-app.set('view engine', 'ejs');   // to use ejs 
+app.set('view engine', 'ejs');   
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("CSS"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});  // connecting to mongoose server then creating db for it
+mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true}); 
 const itemsSchema ={
     name: String
 };
