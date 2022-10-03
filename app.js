@@ -25,14 +25,12 @@ const List = mongoose.model("List", listSchema);
 const item1= new Item({
     name:"Manage your tasks."
 });
+
 const item2= new Item({
-    name:"Hit the + button to add a new item."
-});
-const item3= new Item({
-    name:"<-- Hit this to delete an item."
+    name:"Check to complete your task."
 });
 
-const defaultItems = [item1, item2, item3];
+const defaultItems = [item1, item2];
 
 app.get("/", function(req,res){
     Item.find({}, function(err, foundItems){

@@ -1,13 +1,14 @@
 html {
-  background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  background-color: #636364;
+  background-image: -webkit-linear-gradient(125deg, #A683E3 50%, #636364 50%);
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
 
 h1 {
-  color: #fff;
+  color: rgb(203, 206, 206);
   padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .box {
@@ -19,7 +20,8 @@ h1 {
 }
 
 #heading {
-  background-color: #A683E3;
+  background-color: #636364;
+  background-image: -webkit-linear-gradient(125deg, #A683E3 50%, #636364 50%);
   text-align: center;
 }
 
@@ -73,9 +75,11 @@ button {
   border-color: transparent;
   background-color: #A683E3;
   color: #fff;
-  font-size: 30px;
+  font-size: 26px;
   padding-bottom: 6px;
   border-width: 0;
+  margin-left: 1%;
+
 }
 
 input[type="text"] {
